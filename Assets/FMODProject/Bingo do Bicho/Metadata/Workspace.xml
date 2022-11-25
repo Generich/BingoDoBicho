@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="Workspace" id="{967350a1-1974-47bd-ae5c-144a15abbbbf}">
+		<property name="builtBanksOutputDirectory">
+			<value>../../Unity Project/Bingo do Bicho/Assets/FMODProject</value>
+		</property>
+		<relationship name="masterEventFolder">
+			<destination>{ee797a7a-4dd4-48aa-bead-1ac264ae1117}</destination>
+		</relationship>
+		<relationship name="masterTagFolder">
+			<destination>{0913d8e4-e6dc-4b86-aab6-a7114f5ec110}</destination>
+		</relationship>
+		<relationship name="masterEffectPresetFolder">
+			<destination>{d5c9d20b-226a-45bc-8a37-6c6d166f761b}</destination>
+		</relationship>
+		<relationship name="masterParameterPresetFolder">
+			<destination>{9b02f3cc-d830-43e6-be16-b55f994f96f6}</destination>
+		</relationship>
+		<relationship name="masterBankFolder">
+			<destination>{2e55f754-bcd3-4de8-bd0e-49bf8027cad7}</destination>
+		</relationship>
+		<relationship name="masterSandboxFolder">
+			<destination>{f120ad04-f1e3-48a3-bd72-ef67f4606ce6}</destination>
+		</relationship>
+		<relationship name="masterAssetFolder">
+			<destination>{a0fa51c5-eaa0-4409-90eb-90fb9bb17994}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{a8116914-defb-46f0-a019-b1653dd61475}</destination>
+		</relationship>
+		<relationship name="profilerSessionFolder">
+			<destination>{114b1ae0-2c3c-456c-8a9d-47857c40eda2}</destination>
+		</relationship>
+		<relationship name="platforms">
+			<destination>{0852ae3c-ec1f-442b-b533-e6a9b56e8cab}</destination>
+		</relationship>
+	</object>
+</objects>
