@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b2bc02871ee453981e0679faebe5f3, type: 3}
+  m_Name: D2
+  m_EditorClassIdentifier: 
+  Text:
+  - character: {fileID: 11400000, guid: d716a1a107912f63ca8e13412ececff4, type: 2}
+    DialogueText:
+    - "Quem \xE9 voc\xEA?"
+  - character: {fileID: 11400000, guid: 6fe43e1076e800d2e91e1c2e0d421474, type: 2}
+    DialogueText:
+    - Quem quer que eu seja?
+  - character: {fileID: 11400000, guid: d716a1a107912f63ca8e13412ececff4, type: 2}
+    DialogueText:
+    - "Ih, t\xE1 doid\xE3o \xE9?"
+  - character: {fileID: 11400000, guid: 6fe43e1076e800d2e91e1c2e0d421474, type: 2}
+    DialogueText:
+    - "T\xF4 de meme, eu sou o Bicheiro, e parece que voc\xEA coletou um animal,
+      aparentemente eles s\xE3o a chave para aqueles que querem sair daqui."
+  - character: {fileID: 11400000, guid: d716a1a107912f63ca8e13412ececff4, type: 2}
+    DialogueText:
+    - "Os animais s\xE3o chaves?"
+  - character: {fileID: 11400000, guid: 6fe43e1076e800d2e91e1c2e0d421474, type: 2}
+    DialogueText:
+    - "N\xE3o viaja, s\xE3o animais. Mas aparentemente se voc\xEA pegar eles voc\xEA
+      conseguir\xE1 sair daqui. Acho a ideia muito boba, aqui \xE9 um lugar muito
+      legal, tem eu, tem \xE1rvores, tem eu\u2026 tem tudo!"
+  - character: {fileID: 11400000, guid: d716a1a107912f63ca8e13412ececff4, type: 2}
+    DialogueText:
+    - "Voc\xEA sabe onde est\xE3o esses outros animais?"
+  - character: {fileID: 11400000, guid: 6fe43e1076e800d2e91e1c2e0d421474, type: 2}
+    DialogueText:
+    - "Mais ou menos, at\xE9 poderia te dizer, mas diria um por vez. Ah, se quiser,
+      fiz isso aqui."
+  - character: {fileID: 11400000, guid: d716a1a107912f63ca8e13412ececff4, type: 2}
+    DialogueText:
+    - "Uma cartela de bingo? N\xE3o, do jogo do bicho? N\xE3o\u2026 U\xC9?"
+  - character: {fileID: 11400000, guid: 6fe43e1076e800d2e91e1c2e0d421474, type: 2}
+    DialogueText:
+    - "\xC9 uma cartela do bingo do bicho. Conforme pegar os animais ela vai se completando.
+      At\xE9 hoje n\xE3o sei o que acontece quando se pegam todos, sempre vi as pessoas
+      pela \xFAltima vez com um animal. faltando"
+  - character: {fileID: 11400000, guid: d716a1a107912f63ca8e13412ececff4, type: 2}
+    DialogueText:
+    - "Acho que eu entendi\u2026"
+  - character: {fileID: 11400000, guid: 6fe43e1076e800d2e91e1c2e0d421474, type: 2}
+    DialogueText:
+    - "Ent\xE3o se apressa, as \xFAltimas duas pessoas que ficaram tanto tempo de
+      papo comigo desapareceram antes de eu terminar de contar a segunda piada que
+      eu conhe\xE7o."
+  - character: {fileID: 11400000, guid: d716a1a107912f63ca8e13412ececff4, type: 2}
+    DialogueText:
+    - "E qual \xE9 a segunda piada?"
+  - character: {fileID: 11400000, guid: 6fe43e1076e800d2e91e1c2e0d421474, type: 2}
+    DialogueText:
+    - "N\xC3O ENTENDEU O QUE EU DISSE? CORRE! BORA BILL! VAI FILH\xC3O!"

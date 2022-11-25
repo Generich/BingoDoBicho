@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{2bf4ad02-a420-4202-9a6e-c5dbb30cd05e}">
+		<property name="name">
+			<value>Perto</value>
+		</property>
+		<relationship name="folder">
+			<destination>{9b02f3cc-d830-43e6-be16-b55f994f96f6}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{ff1fd5a4-dd05-4952-89c6-0c430287335b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{ff1fd5a4-dd05-4952-89c6-0c430287335b}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,4 @@
+repository "Bingo do Bicho@Jogo_da_Disciplina@cloud"
+  path "/"
+    br "/main"
+    co "/main"

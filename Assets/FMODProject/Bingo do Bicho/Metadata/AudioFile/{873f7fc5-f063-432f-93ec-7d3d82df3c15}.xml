@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{873f7fc5-f063-432f-93ec-7d3d82df3c15}">
+		<property name="assetPath">
+			<value>Chicken3.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2819274376417233</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a0fa51c5-eaa0-4409-90eb-90fb9bb17994}</destination>
+		</relationship>
+	</object>
+</objects>

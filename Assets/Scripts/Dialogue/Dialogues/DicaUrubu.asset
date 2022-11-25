@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b2bc02871ee453981e0679faebe5f3, type: 3}
+  m_Name: DicaUrubu
+  m_EditorClassIdentifier: 
+  Text:
+  - character: {fileID: 11400000, guid: 6fe43e1076e800d2e91e1c2e0d421474, type: 2}
+    DialogueText:
+    - "At\xE9 hoje n\xE3o acredito que aquele Urubu me enganou com aquela tabela
+      de trading. Como que 200 reais d\xE1 2000 de retorno?"

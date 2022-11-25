@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b2bc02871ee453981e0679faebe5f3, type: 3}
+  m_Name: DicaCapivara
+  m_EditorClassIdentifier: 
+  Text:
+  - character: {fileID: 11400000, guid: 6fe43e1076e800d2e91e1c2e0d421474, type: 2}
+    DialogueText:
+    - "Voc\xEA sabia que o ex\xE9rcito se inspira em capivaras para fazer seus treinamentos
+      anf\xEDbios. Alguns dizem que essa inspira\xE7\xE3o inclui sons em conjunto
+      enquanto se est\xE1 parcialmente submerso."

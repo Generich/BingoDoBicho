@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/1. Title.unity
+    guid: 386eaf6f636eeb446a411180d71beb68
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/2. TutorialScene.unity
+    guid: 022bc2faa27d9394da298ac78ecd311f
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/3. DialogueScene.unity
+    guid: a6dd666850f19d34580a6d6521f60c7b
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/4. GameScene.unity
+    guid: 0b229fe069dfefa45b935f1d167f7b46
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/5. Victory.unity
+    guid: eb8f3e4cce1face48b0837dbb3d582df
+  - enabled: 1
+    path: Assets/Scenes/FinalScenes/6. Defeat.unity
+    guid: 04e9908dc7162ec4ca5786cd48d17286
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 5f92a1715814d4101a5a88f86a7fe5be, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: c3211067d814350ce9313bc5d6bbce79, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 2c03c36cbffb9eb47a1ccc95740b8a43, type: 2}
