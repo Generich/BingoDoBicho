@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Workspace" id="{967350a1-1974-47bd-ae5c-144a15abbbbf}">
 		<property name="builtBanksOutputDirectory">
-			<value>../../Unity Project/Bingo do Bicho/Assets/FMODProject</value>
+			<value>Build</value>
 		</property>
 		<relationship name="masterEventFolder">
 			<destination>{ee797a7a-4dd4-48aa-bead-1ac264ae1117}</destination>

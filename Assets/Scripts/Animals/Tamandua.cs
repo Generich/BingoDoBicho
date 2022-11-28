@@ -34,8 +34,8 @@ public class Tamandua : MonoBehaviour
         TamanduaSFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Bichos/Tamandua");
         TamanduaSFX.start();
         TamanduaSFX.release();
-        TamanduaSFX.setParameterByName("Perto", 0); // Toca o som normal se o player n�o chegou perto ainda
-        TamanduaSFX.setVolume(0f);
+        TamanduaSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform.transform.position));
+        TamanduaSFX.setParameterByName("Perto", 1); // Toca o som normal se o player n�o chegou perto ainda
 
     }
 
@@ -56,7 +56,8 @@ public class Tamandua : MonoBehaviour
     private void canCaptureTamandua(){
         //se o player estiver no raio de captura do tamandua
         if(canCaptureAnimal.canCapture){
-
+            Debug.Log("Area Tamandua");
+            Debug.Log("Item: " + hiro.transform.GetComponent<CollectedItems>().itemName);
             //se tiver com o item certo captura o tamandua
             if(hiro.transform.GetComponent<CollectedItems>().itemName == "flag"){
                 effect.forceMagnitude = forceWithIten;
@@ -73,7 +74,7 @@ public class Tamandua : MonoBehaviour
 
             } else {
                 //
-
+                TamanduaSFX.setParameterByName("Perto", 0); //toca o som do haki do tamandua
                 effect.forceMagnitude = force;
                 // Debug.Log("Force Magnitude" + effect.forceMagnitude);
             }
@@ -86,20 +87,12 @@ public class Tamandua : MonoBehaviour
         if(hiro.transform.GetComponent<CollectedItems>().itemName != "flag" && other.gameObject.tag != "screenColl"){
             Begin(duration);
         }
-
-        if (other.gameObject.tag == "screenColl")
-        {
-            Debug.Log("Entrou");
-            TamanduaSFX.setParameterByName("Perto", 1);
-            TamanduaSFX.setVolume(5f);
-        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        TamanduaSFX.setVolume(0f);
+        TamanduaSFX.setParameterByName("Perto", 1); // Toca o som normal se o player n�o chegou perto ainda
     }
-
 
     // Update is called once per frame
     private void Begin(int second)

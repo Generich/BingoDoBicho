@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public bool playerInteract;
     public float _speed = 5f;
     public bool speak;
-    public int howManyLeft = 5;
+    public int howManyLeft = 4;
     public bool isPause = false;
     private bool facinRight = true;
     private float lastPositionX;

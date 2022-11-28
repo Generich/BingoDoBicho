@@ -16,6 +16,7 @@ public class CollectedItems : MonoBehaviour
     [SerializeField] private Bicheiro bicheiro;
     private int itemPosition = -1;
     private int animalPosition = -1;
+    public bool hiroCanCapure;
 
     [SerializeField] private GameObject Inventory;
 
@@ -25,7 +26,7 @@ public class CollectedItems : MonoBehaviour
         {
             Inventory.transform.GetChild(0).gameObject.SetActive(true);
         }
-        if(string.Equals(name, "money"))
+        if(string.Equals(name, "phone"))
         {
             Inventory.transform.GetChild(1).gameObject.SetActive(true);
         }
@@ -45,7 +46,7 @@ public class CollectedItems : MonoBehaviour
         {
             Inventory.transform.GetChild(0).gameObject.SetActive(false);
         }
-        if (string.Equals(name, "money"))
+        if (string.Equals(name, "phone"))
         {
             Inventory.transform.GetChild(1).gameObject.SetActive(false);
         }
@@ -115,7 +116,8 @@ public class CollectedItems : MonoBehaviour
             //(por enquanto) o antigo item coletado eh soltado e retorna para o ponto de origem
             //acao so eh executada se o player nao estiver perto de nenhum bicho
             else if(animalCount == totalAnimals && !items[itemPosition].transform.GetComponent<Items>().used){
-                if(items[itemPosition].transform.GetComponent<Items>().collected){
+                if(items[itemPosition].transform.GetComponent<Items>().collected && !hiroCanCapure)
+                {
                     Debug.Log("Item " + items[itemPosition].name + " soltado");
                     hideItem(itemName);
                     collectedItem = false;
