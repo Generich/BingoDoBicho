@@ -490,12 +490,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eef8d824ea7b63742966aaa0e94ac383, type: 3}
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
-  SwitchSettingsMigration: 1
+  switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
   sourceProjectPath: Assets/FMODProject/Bingo do Bicho/Bingo do Bicho.fspro
   sourceBankPath: Assets/FMODProject/Bingo do Bicho/Build
-  SourceBankPathUnformatted: 
+  sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
   AutomaticEventLoading: 1
@@ -511,7 +511,6 @@ MonoBehaviour:
   SampleRateSettings: []
   LiveUpdateSettings: []
   OverlaySettings: []
-  LoggingSettings: []
   BankDirectorySettings: []
   VirtualChannelSettings: []
   RealChannelSettings: []
@@ -529,9 +528,9 @@ MonoBehaviour:
   EnableErrorCallback: 0
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 0
-  CurrentVersion: 131591
+  CurrentVersion: 131593
   HideSetupWizard: 1
-  LastEventReferenceScanVersion: 131591
+  LastEventReferenceScanVersion: 131593
   Platforms:
   - {fileID: -9030629883251746209}
   - {fileID: -7767374229115538600}

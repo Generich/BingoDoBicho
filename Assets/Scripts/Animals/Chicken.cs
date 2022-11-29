@@ -20,10 +20,15 @@ public class Chicken : MonoBehaviour
     public float runVelocity;
     [SerializeField] private UnityEngine.AI.NavMeshAgent agent;
 
+    private FMOD.Studio.EventInstance GalinhaSFX;
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        GalinhaSFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Bichos/Galinha");
+        GalinhaSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform.transform.position));
+        GalinhaSFX.start();
+        GalinhaSFX.release();
     }
 
     // Update is called once per frame

@@ -30,13 +30,14 @@ public class Rabbit : MonoBehaviour
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         CoelhoSFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Bichos/Coelho");
         CoelhoSFX.start();
+        CoelhoSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform.transform.position));
         CoelhoSFX.release();
-        CoelhoSFX.setVolume(0f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        CoelhoSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform.transform.position));
         canCaptureRabbit();
     }
 
@@ -103,18 +104,5 @@ public class Rabbit : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         point.NewPosition();
-    }
-
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "screenColl")
-            CoelhoSFX.setVolume(5f);
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "screenColl")
-            CoelhoSFX.setVolume(0f);
     }
 }

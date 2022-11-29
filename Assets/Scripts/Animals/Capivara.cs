@@ -30,13 +30,14 @@ public class Capivara : MonoBehaviour
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         CapivaraSFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Bichos/Capivara");
         CapivaraSFX.start();
+        CapivaraSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform.transform.position));
         CapivaraSFX.release();
-        CapivaraSFX.setVolume(0f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        CapivaraSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform.transform.position));
         //verifica se a capivara pode ser capturada
         canCaptureCapivara();
         if(collectedCapivara){
@@ -60,11 +61,11 @@ public class Capivara : MonoBehaviour
 
                 agent.speed = 0f;
                 if(player.playerInteract){
-                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Bichos/Capivarinhas");
                     collectedCapivara = true;
                     iten.used = true;
                     hiro.transform.GetComponent<CollectedItems>().totalAnimals--;
                     hiro.transform.GetComponent<CollectedItems>().checkUsedItem();
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Bichos/Capivarinhas");
                     player.disableUntilDeliver();
                     dialogue.currentDialogue = null;
                     dialogue.allDialogues.Remove(hint);
@@ -73,7 +74,6 @@ public class Capivara : MonoBehaviour
             }
             else{
                 //fazer com que o animal vá para uma direção oposta do player
-                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Bichos/Capivara");
                 agent.speed = runVelocity;
                 float x,y;
                 Vector3 pos = player.transform.position;
@@ -101,15 +101,4 @@ public class Capivara : MonoBehaviour
         point.NewPosition();
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "screenColl")
-            CapivaraSFX.setVolume(5f);
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "screenColl")
-            CapivaraSFX.setVolume(0f);
-    }
 }

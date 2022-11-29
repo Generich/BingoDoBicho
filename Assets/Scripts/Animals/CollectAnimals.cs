@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollectAnimals : MonoBehaviour
 {
     public bool canCapture;
+    [SerializeField] CollectedItems iten;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +21,12 @@ public class CollectAnimals : MonoBehaviour
     //so permite o player tentar capturar um bicho se ele estiver perto suficiente
     private void OnTriggerEnter2D(Collider2D other){
         canCapture = true;
+        iten.hiroCanCapure = true;
     }
 
     private void OnTriggerExit2D(Collider2D other) {
         canCapture = false;
+        iten.hiroCanCapure = false;
     }
 
 }

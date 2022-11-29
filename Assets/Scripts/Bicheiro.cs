@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Bicheiro : MonoBehaviour
 {
     public bool canSpeak;
+    public int count;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private DialogueSystem dialogue;
@@ -19,30 +20,41 @@ public class Bicheiro : MonoBehaviour
 
     private void markAnimal()
     {
+        count = 0;
+
         if (Urub.collectedUrubu)
         {
             X.transform.GetChild(0).gameObject.SetActive(true);
+            count++;
         }
         if (Coelho.collectedRabbit)
         {
             X.transform.GetChild(1).gameObject.SetActive(true);
+            count++;
         }
         if (Tamand.collectedTamandua)
         {
             X.transform.GetChild(2).gameObject.SetActive(true);
+            count++;
         }
-        if(Capi.collectedCapivara)
+        if (Capi.collectedCapivara)
         {
             X.transform.GetChild(3).gameObject.SetActive(true);
+            count++;
         }
+
+        Debug.Log(count);
+        if (count == 4)
+            EndGame();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (player.transform.GetComponent<Player>().playerInteract && canSpeak)
-            if (player.transform.GetComponent<Player>().checkBingoCard())
-                EndGame();
+            if (player.transform.GetComponent<Player>().checkBingoCard()) {
+                CanSpeak();
+            }
             else
             {
                 CanSpeak();

@@ -31,14 +31,15 @@ public class Urubu : MonoBehaviour
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         UrubuSFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Bichos/Urubu");
+        UrubuSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform.transform.position));
         UrubuSFX.start();
         UrubuSFX.release();
-        UrubuSFX.setVolume(0f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        UrubuSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.transform.transform.position));
         //verifica se o urubu pode ser capturada
         canCaptureUrubu();
         if(collectedUrubu){
@@ -80,7 +81,6 @@ public class Urubu : MonoBehaviour
                 }else{
                     //fazer com que o animal vá para uma direção oposta do player
 
-                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Bichos/UrubuBravo");
                     agent.speed = runVelocity;
                     float x,y;
                     Vector3 pos = player.transform.position;
@@ -106,17 +106,5 @@ public class Urubu : MonoBehaviour
     
     void OnCollisionEnter(Collision collision){
         point.NewPosition();
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "screenColl")
-            UrubuSFX.setVolume(5f);
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "screenColl")
-            UrubuSFX.setVolume(0f);
     }
 }

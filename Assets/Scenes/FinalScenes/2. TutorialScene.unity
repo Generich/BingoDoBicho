@@ -7867,6 +7867,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 07c726eabb9170246a01c90476f13e1d, type: 3}
+--- !u!114 &487987548 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4409679262747924583, guid: 07c726eabb9170246a01c90476f13e1d, type: 3}
+  m_PrefabInstance: {fileID: 487987547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591847752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae813f3ae58fa48bb3d3f0a0c894350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &492430818 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8224008778033621414, guid: ab4067419b83ba29c89614107a7a0151, type: 3}
@@ -8069,7 +8080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8224008779251810778, guid: ab4067419b83ba29c89614107a7a0151, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8224008779251810778, guid: ab4067419b83ba29c89614107a7a0151, type: 3}
       propertyPath: m_AnchorMin.x
@@ -8077,15 +8088,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8224008779251810778, guid: ab4067419b83ba29c89614107a7a0151, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8224008779251810778, guid: ab4067419b83ba29c89614107a7a0151, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 2667.076
+      value: 2147.3423
       objectReference: {fileID: 0}
     - target: {fileID: 8224008779251810778, guid: ab4067419b83ba29c89614107a7a0151, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1273.0793
+      value: 902.8029
       objectReference: {fileID: 0}
     - target: {fileID: 8224008779251810778, guid: ab4067419b83ba29c89614107a7a0151, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8117,11 +8128,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8224008779251810778, guid: ab4067419b83ba29c89614107a7a0151, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000015258789
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8224008779251810778, guid: ab4067419b83ba29c89614107a7a0151, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 180
+      value: -271
       objectReference: {fileID: 0}
     - target: {fileID: 8224008779251810778, guid: ab4067419b83ba29c89614107a7a0151, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8719,6 +8730,10 @@ PrefabInstance:
       propertyPath: musicManager
       value: 
       objectReference: {fileID: 1768965759}
+    - target: {fileID: 3338765912012473319, guid: 88b889c4b2f51f74d9c70abd2b6f8c43, type: 3}
+      propertyPath: iten
+      value: 
+      objectReference: {fileID: 487987548}
     - target: {fileID: 3338765912012473336, guid: 88b889c4b2f51f74d9c70abd2b6f8c43, type: 3}
       propertyPath: m_Name
       value: chicken

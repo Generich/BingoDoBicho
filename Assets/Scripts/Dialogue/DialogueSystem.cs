@@ -88,6 +88,14 @@ public class DialogueSystem : MonoBehaviour
                 //Coloca o nome do personagem na caixa de diálogo
                 nameCharacter.text = currentDialogue.Text[dialogueIndex].character.Name;
                 
+                if(currentDialogue.Text[dialogueIndex].character.Name == "Liro")
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Personagens/Liro");
+                }
+                else
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Personagens/Bicheiro");
+                }
                 //Coloca todas as falas da expressão atual em uma fila
                 foreach (string dialogueText in currentDialogue.Text[dialogueIndex].DialogueText){   
                     dialogueQueue.Enqueue(dialogueText);
